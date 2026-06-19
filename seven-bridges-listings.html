@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Seven Bridges - Active Listings | June 2026 | Dina Ulrich</title>
+ <style>
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5; padding: 20px; }
+   .container { max-width: 1400px; margin: 0 auto; background: white; padding: 40px; }
+   .header { border-bottom: 4px solid #00a8e1; padding-bottom: 20px; margin-bottom: 30px; }
+   .header h1 { color: #1a3e5c; font-size: 2.5em; font-weight: 300; text-transform: uppercase; letter-spacing: 0.08em; }
+   .header-subtitle { color: #666; font-size: 1.1em; margin-top: 10px; }
+   .summary-stats { display: flex; gap: 30px; margin-bottom: 30px; flex-wrap: wrap; }
+   .summary-stat { background: #f8fbff; padding: 20px 30px; border-radius: 8px; border-left: 4px solid #00a8e1; }
+   .summary-stat-label { color: #666; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.1em; }
+   .summary-stat-value { color: #1a3e5c; font-size: 1.8em; font-weight: 600; margin-top: 5px; }
+   .listing-card { background: white; border: 1px solid #e8e8e8; border-left: 4px solid #00a8e1; padding: 25px 25px 25px 30px; margin-bottom: 20px; display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: start; transition: all 0.3s ease; }
+   .listing-card:hover { border-left-color: #1a3e5c; box-shadow: 0 4px 20px rgba(26, 62, 92, 0.15); transform: translateX(5px); }
+   .listing-card.waterfront { border-left-color: #28a745; }
+   .listing-card.sold { border-left-color: #999; opacity: 0.85; }
+   .listing-address { color: #1a3e5c; font-size: 1.4em; font-weight: 500; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.03em; }
+   .listing-badge { display: inline-block; padding: 3px 10px; font-size: 0.7em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; border-radius: 3px; margin-left: 10px; vertical-align: middle; }
+   .badge-waterfront { background: #d4edda; color: #155724; }
+   .badge-sold { background: #e2e3e5; color: #383d41; }
+   .badge-reduced { background: #fff3cd; color: #856404; }
+   .badge-new { background: #cfe2ff; color: #084298; }
+   .badge-bom { background: #e7d3ff; color: #4b1e8a; }
+   .listing-price { color: #000000; font-size: 2em; font-weight: 300; margin-bottom: 10px; }
+   .listing-details { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+   .listing-detail-item { display: flex; flex-direction: column; }
+   .listing-detail-label { color: #666; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 3px; }
+   .listing-detail-value { color: #1a3e5c; font-size: 1em; font-weight: 600; }
+   .listing-description { color: #555; font-size: 0.9em; line-height: 1.6; margin-bottom: 12px; }
+   .listing-mls { display: inline-block; background: #f4f4f4; color: #1a3e5c; padding: 8px 15px; font-size: 0.85em; font-weight: 500; margin-top: 10px; letter-spacing: 0.05em; }
+   .view-listing-btn { background: #00a8e1; color: white; padding: 14px 30px; text-decoration: none; font-size: 0.95em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; transition: all 0.3s ease; border-radius: 4px; }
+   .view-listing-btn:hover { background: #0088b8; transform: translateY(-2px); }
+   .back-button { background: #1a3e5c; color: white; padding: 12px 25px; text-decoration: none; font-size: 0.9em; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; margin-bottom: 20px; border-radius: 4px; }
+   .back-button:hover { background: #0d1f2d; }
+   .disclaimer { color: #999; font-size: 0.75em; line-height: 1.6; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e8e8e8; }
+   .placeholder-note { background: #fff3cd; border-left: 4px solid #856404; color: #856404; padding: 18px 24px; margin-bottom: 25px; font-size: 0.95em; line-height: 1.6; }
+   @media (max-width: 768px) {
+     .listing-card { grid-template-columns: 1fr; }
+     .listing-cta { text-align: center; }
+     .summary-stats { flex-direction: column; }
+     .container { padding: 20px; }
+     .header h1 { font-size: 1.6em; }
+   }
+ </style>
+</head>
+<body>
+
+<div class="container">
+
+ <a href="newsletter.html" class="back-button">&larr; Back to Newsletter</a>
+
+ <div class="header">
+   <h1>Seven Bridges &mdash; Active Listings</h1>
+   <p class="header-subtitle">Updated June 19, 2026 | 8 Active Listings | Prepared by Dina Ulrich</p>
+ </div>
+
+ <div class="summary-stats">
+   <div class="summary-stat">
+     <div class="summary-stat-label">Price Range</div>
+     <div class="summary-stat-value">$1.9M &ndash; $3.9M</div>
+   </div>
+   <div class="summary-stat">
+     <div class="summary-stat-label">Active Listings</div>
+     <div class="summary-stat-value">8</div>
+   </div>
+   <div class="summary-stat">
+     <div class="summary-stat-label">Sold YTD</div>
+     <div class="summary-stat-value">15</div>
+   </div>
+ </div>
+
+ <!-- Listing 1: $3,999,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">16722 Cannes Street, Delray Beach</div>
+     <div class="listing-price">$3,999,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">8</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">9 Full / 1 Half</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">5,892</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">7,696</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2017</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">Yes</div></div>
+     </div>
+     <div class="listing-description">Estate residence in Seven Bridges, the gated luxury community in Delray Beach. Eight bedrooms, nine full and one half bath, 5,892 square feet of living space (7,696 total under roof) with a private pool. Seven Bridges residents enjoy the resort-style clubhouse, restaurants, fitness center, tennis, pickleball, and pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: B26017036</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/16722-CANNES-STREET-DELRAY-BEACH-FL-33446/B26017036/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing: $2,795,000 - Back on Market -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">9599 Moritz Way, Delray Beach <span class="listing-badge badge-bom">Back on Market</span></div>
+     <div class="listing-price">$2,795,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">5</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">5 Full / 1 Half</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">4,820</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">5,980</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2015</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">Yes</div></div>
+     </div>
+     <div class="listing-description">Back on market &mdash; five-bedroom residence in Seven Bridges, Delray Beach. Five full and one half bath, 4,820 square feet of living space (5,980 total under roof) with a private pool. Full access to the Seven Bridges resort-style clubhouse, fitness center, tennis, pickleball, and pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: R11165859</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/9599-MORITZ-WAY-DELRAY-BEACH-FL-33446/R11165859/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 2: $2,750,000 - New Listing -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">16776 Matisse Drive, Delray Beach <span class="listing-badge badge-new">New Listing</span></div>
+     <div class="listing-price">$2,750,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">4</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">4 Full / 1 Half</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">4,589</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">6,196</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2018</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">Yes</div></div>
+     </div>
+     <div class="listing-description">Newly listed estate in Seven Bridges, Delray Beach. Four bedrooms, four full and one half bath, 4,589 square feet of living space (6,196 total under roof) with a private heated pool and spa. Built in 2018 with full access to the Seven Bridges resort-style clubhouse, restaurants, fitness center, tennis, pickleball, and pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: B26032185</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/16776-MATISSE-DRIVE-DELRAY-BEACH-FL-33446/B26032185/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 4: $2,690,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">9769 Bozzano Drive, Delray Beach</div>
+     <div class="listing-price">$2,690,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">5</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">5 Full / 1 Half</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">4,248</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">5,913</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2018</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">Yes</div></div>
+     </div>
+     <div class="listing-description">Five-bedroom estate in Seven Bridges, Delray Beach. Five full and one half bath, 4,248 square feet of living space (5,913 total under roof) with a private pool. Built in 2018 with full access to the Seven Bridges clubhouse, restaurants, fitness center, tennis, pickleball, and resort-style pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: B26029185</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/9769-BOZZANO-DRIVE-DELRAY-BEACH-FL-33446/B26029185/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 5: $2,200,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">16801 Pavilion Way, Delray Beach</div>
+     <div class="listing-price">$2,200,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">4</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">5 Full</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">4,028</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">5,392</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2016</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">Yes</div></div>
+     </div>
+     <div class="listing-description">Four-bedroom single-family residence in Seven Bridges, Delray Beach. Five full baths, 4,028 square feet of living space (5,392 total under roof) with a private pool. Built in 2016 with full access to the Seven Bridges clubhouse, restaurants, fitness center, tennis, pickleball, and pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: R11147215</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/16801-PAVILION-WAY-DELRAY-BEACH-FL-33446/R11147215/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing: $2,050,000 - Waterfront, New Listing -->
+ <div class="listing-card waterfront">
+   <div class="listing-info">
+     <div class="listing-address">9524 Eden Roc Court, Delray Beach <span class="listing-badge badge-waterfront">Waterfront</span> <span class="listing-badge badge-new">New Listing</span></div>
+     <div class="listing-price">$2,050,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">4</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">4 Full</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">3,537</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">4,664</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2016</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">Yes</div></div>
+     </div>
+     <div class="listing-description">Just-listed lakefront residence in Seven Bridges, Delray Beach. Four bedrooms, four full baths, 3,537 square feet of living space (4,664 total under roof) with a screened saltwater heated pool and serene lake views. Built in 2016 with full access to the Seven Bridges resort-style clubhouse, restaurants, fitness center, tennis, pickleball, and pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: B26031136</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/9524-EDEN-ROC-COURT-DELRAY-BEACH-FL-33446/B26031136/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 8: $1,999,999 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">16872 Pavilion Way, Delray Beach</div>
+     <div class="listing-price">$1,999,999</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">3</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">3 Full / 1 Half</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">3,249</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">4,108</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2015</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">Yes</div></div>
+     </div>
+     <div class="listing-description">Three-bedroom residence in Seven Bridges, Delray Beach. Three full and one half bath, 3,249 square feet of living space (4,108 total under roof) with a private pool. Full access to the Seven Bridges resort-style clubhouse, fitness center, tennis, pickleball, and pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: B26015401</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/16872-PAVILION-WAY-DELRAY-BEACH-FL-33446/B26015401/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 9: $1,998,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">16921 Pavilion Way, Delray Beach</div>
+     <div class="listing-price">$1,998,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item"><div class="listing-detail-label">Beds</div><div class="listing-detail-value">5</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Baths</div><div class="listing-detail-value">4 Full / 1 Half</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Sq Ft</div><div class="listing-detail-value">4,248</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Total Sq Ft</div><div class="listing-detail-value">5,913</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Built</div><div class="listing-detail-value">2016</div></div>
+       <div class="listing-detail-item"><div class="listing-detail-label">Pool</div><div class="listing-detail-value">No</div></div>
+     </div>
+     <div class="listing-description">Five-bedroom single-family residence in Seven Bridges, Delray Beach. Four full and one half bath, 4,248 square feet of living space (5,913 total under roof). Built in 2016 with full access to the Seven Bridges resort-style clubhouse, fitness center, tennis, pickleball, and pools. Schools: Whispering Pines Elementary, Eagles Landing Middle, Olympic Heights High.</div>
+     <div class="listing-mls">MLS#: B26002348</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/16921-PAVILION-WAY-DELRAY-BEACH-FL-33446/B26002348/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 2px solid #e8e8e8;">
+   <p style="color: #666; font-size: 0.9em; margin-bottom: 15px;">Questions about Seven Bridges?</p>
+   <a href="https://bogenhomes.com/agents/dina-ulrich/" target="_blank" style="display: inline-block; background: #1a3e5c; color: white; padding: 14px 40px; text-decoration: none; font-size: 1em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; border-radius: 4px;">Contact Dina Ulrich</a>
+   <p style="color: #999; font-size: 0.8em; margin-top: 20px;">Dina Ulrich | The Edmund Bogen Team | Douglas Elliman Real Estate | (561) 769-8000</p>
+ </div>
+
+ <div class="disclaimer">
+   <p>&copy; 2026 Douglas Elliman Real Estate. All material presented herein is intended for information purposes only. While this information is believed to be correct, it is represented subject to errors, omissions, changes or withdrawal without notice. All property information, including, but not limited to square footage, room count, number of bedrooms and the school district in property listings should be verified by your own attorney, architect or zoning expert. If your property is currently listed with another real estate broker, please disregard this offer. It is not our intention to solicit the offerings of other real estate brokers. We cooperate with them fully. Equal Housing Opportunity.</p>
+ </div>
+
+</div>
+
+</body>
+</html>
